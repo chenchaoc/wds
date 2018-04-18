@@ -1,0 +1,21 @@
+{
+    "presets": [
+        //https://github.com/babel/babel/tree/master/packages/babel-preset-env
+        ["env", {
+            "targets": {
+              "browsers": ["last 2 versions"],
+              "node": "current"
+            },
+            "modules": false,
+        }],
+        //不写的话webpack配置文件不能使用es6语法
+        "es2015",
+        "stage-0",
+        //babel-preset-react 一定要install
+        "react",
+    ],
+    "plugins": [
+        //https://segmentfault.com/q/1010000005596587?from=singlemessage&isappinstalled=1
+        "transform-runtime"
+    ]
+}
